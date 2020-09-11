@@ -105,7 +105,7 @@ namespace InvalidateCookie.WebApplication.Controllers
                     return View(model);
                 }
             }
-            ModelState.AddModelError(nameof(model.CurrentPassword), "کلمه عبور فعلی اشتباه است");
+            ModelState.AddModelError(nameof(model.CurrentPassword), "Current password is incorrect");
             return View(model);
         }        
     }
